@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import Section from '../Section'
 import { GalleryItem } from '../../pages/Home'
-import star_wars from '../../assets/images/star_wars.png'
-import re4 from '../../assets/images/resident.png'
 import play from '../../assets/images/play.png'
 import zoom from '../../assets/images/zoom.png'
 import fechar from '../../assets/images/fechar.png'
@@ -17,21 +15,6 @@ type Props = {
   name: string
   items: GalleryItem[]
 }
-
-const mock: GalleryItem[] = [
-  {
-    type: 'image',
-    url: star_wars
-  },
-  {
-    type: 'image',
-    url: re4
-  },
-  {
-    type: 'video',
-    url: 'https://www.youtube.com/embed/k9IS6Wsct1w'
-  }
-]
 
 const Gallery = ({ defaultCover, name, items }: Props) => {
   const [modal, setModal] = useState<Modal>({
