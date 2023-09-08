@@ -12,6 +12,7 @@ export const SectionTitle = styled.h4`
 export const Container = styled.footer`
   padding: 32px 0;
   background-color: ${cores.cinza};
+  margin-top: 40px;
 `
 
 export const Links = styled.ul`
