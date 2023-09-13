@@ -37,6 +37,10 @@ export const ItemGroup = styled.div<ItemProps>`
     height: 32px;
     width: 100%;
     padding: 0 8px;
+
+    &.error {
+      border: 1px solid red;
+    }
   }
 `
 

@@ -11,6 +11,7 @@ export const Card = styled(Link)`
   border-radius: 8px;
   padding: 8px;
   position: relative;
+  height: 100%;
 
   img {
     display: block;

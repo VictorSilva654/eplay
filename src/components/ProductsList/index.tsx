@@ -1,4 +1,4 @@
-import { Game } from '../../pages/Home'
+import { formatPrice } from '../../utils'
 import Product from '../Product'
 import { Container, List, Title } from './styles'
 
@@ -7,13 +7,6 @@ export type Props = {
   title: string
   games: Game[]
   id?: string
-}
-
-export const formataPreco = (preco = 0) => {
-  return new Intl.NumberFormat('pt-br', {
-    style: 'currency',
-    currency: 'BRL'
-  }).format(preco)
 }
 
 const ProductsList = ({ title, background, games, id }: Props) => {
@@ -29,7 +22,7 @@ const ProductsList = ({ title, background, games, id }: Props) => {
     }
 
     if (game.prices.current) {
-      tags.push(formataPreco(game.prices.current))
+      tags.push(formatPrice(game.prices.current))
     }
 
     return tags

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import { HeaderBar, ItemList, Items, LinkChart } from './styles'
 import logo from '../../assets/images/logo.svg'
 import carrinho from '../../assets/images/carrinho.svg'
@@ -26,10 +27,10 @@ const Header = () => {
               <Link to="/categories">Categorias</Link>
             </ItemList>
             <ItemList>
-              <a href="#">Novidades</a>
+              <HashLink to="/#soon">Em breve</HashLink>
             </ItemList>
             <ItemList>
-              <a href="#">Promoções</a>
+              <HashLink to="/#on-sale">Promoções</HashLink>
             </ItemList>
           </Items>
         </nav>
